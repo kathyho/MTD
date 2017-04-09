@@ -178,14 +178,16 @@ Returns}
 
 \maketitle
 \begin{doublespace}
-Chi-San Ho\textsuperscript{a}, Paul Damien\textsuperscript{a,{*}},
+\noindent Chi-San Ho\textsuperscript{a}, Paul Damien\textsuperscript{a,{*}},
 Bin Gu\textsuperscript{b}, Prabhudev Konana\textsuperscript{a}
 
-\textsuperscript{a}{\small{}McCombs School of Business, University
-of Texas at Austin, 2100 Speedway Stop B6500, Austin, TX 78712, USA}{\small \par}
+\noindent \textsuperscript{a}{\small{}McCombs School of Business,
+University of Texas at Austin, 2100 Speedway Stop B6500, Austin, TX
+78712, USA}{\small \par}
 
-\textsuperscript{b}{\small{}W. P. Carey School of Business, Arizona
-State University, Main Campus PO BOX 874606, Tempe, AZ 85287, USA}{\small \par}
+\noindent \textsuperscript{b}{\small{}W. P. Carey School of Business,
+Arizona State University, Main Campus PO BOX 874606, Tempe, AZ 85287,
+USA}{\small \par}
 \end{doublespace}
 \begin{abstract}
 \begin{doublespace}
@@ -207,6 +209,23 @@ stocks, ranging from $-0.8$ to $0.6$ in both data sets.
 Keywords: Bayesian Inference; Seemingly Unrelated Regressions; Social
 Media Sentiments; Dynamic Linear Models; Markov Chain Monte Carlo 
 \end{doublespace}
+
+\vfill{}
+
+\begin{onehalfspace}
+\noindent \textbf{\textsuperscript{\textbf{{*}}}Corresponding Author:}
+
+\noindent Paul Damien, B.M. (Mack) Rankin, Jr., Professor of Business
+Administration
+
+\noindent McCombs School of Business, University of Texas at Austin
+
+\noindent {\small{}2100 Speedway Stop B6500}{\small \par}
+
+\noindent {\small{}Austin, TX 78712-1277, USA}{\small \par}
+
+\noindent Email: Paul.Damien@mccombs.utexas.edu\pagebreak{}
+\end{onehalfspace}
 
 \section{Introduction}
 
@@ -263,7 +282,7 @@ Finance alone; see, \citep{Gu2007} and \citep{lugmayr2013single}.
 
 There is substantial literature on the theoretical pros and cons of
 social media sentiments and their relationship to modeling stock returns
-and other metrics; as examples \citep{Antweiler2004,Bagnoli1999,bussegreen2002,dewally2003internet,li2014media,\citep{luo2013social},OhSheng2011,Tetlock2008,tetlock2007giving,Tumarkin2001,XuZhang2013}.
+and other metrics; as examples \citep{Antweiler2004,Bagnoli1999,bussegreen2002,dewally2003internet,li2014media,luo2013social,OhSheng2011,Tetlock2008,tetlock2007giving,Tumarkin2001,XuZhang2013}.
 Recently, Sul et al. \citep{sul2016trading} study the predictability
 of returns, based on sentiments expressed on Twitter. Using a multiple
 linear regression model, they conclude that ``sentiment in tweets
@@ -372,15 +391,15 @@ the mathematical approach taken here would readily apply to such data,
 and related ones, as well.
 
 Saving the details for later, here we briefly highlight some of the
-key findings from this study. First, the impact
-of social media sentiments on future stock returns vary over time.
-Second, there is considerable correlation between stocks. Third, the
-time-varying social media sentiments coefficients are more stable
-in 2011 when compared to 2009; the latter was a period of high turbulence
-due to recession. Fourth, adding Fama-French or Momentum factors (\citep{carhart1997})
-underperforms a model with just social media sentiments and market
-returns; that is, the prediction errors are significantly larger compared
-to a model with just social media sentiments and market returns.
+key findings from this study. First, the impact of social media sentiments
+on future stock returns vary over time. Second, there is considerable
+correlation between stocks. Third, the time-varying social media sentiments
+coefficients are more stable in 2011 when compared to 2009; the latter
+was a period of high turbulence due to recession. Fourth, adding Fama-French
+or Momentum factors (\citep{carhart1997}) underperforms a model with
+just social media sentiments and market returns; that is, the prediction
+errors are significantly larger compared to a model with just social
+media sentiments and market returns.
 
 Section 2 details the methodology and Section 3 describes the data.
 Section 4 provides a comprehensive empirical study, followed by conclusions
@@ -468,7 +487,7 @@ y_{j}=X_{j}\beta_{j}+u_{j},j=1,\ldots,M,\\
 \end{array}
 \end{equation}
 
-\noindent $y_{j}$ and $u_{j}$ are $n\times1$ vectors, $X_{j}$ is an $n\times p_{j}$
+$y_{j}$ and $u_{j}$ are $n\times1$ vectors, $X_{j}$ is an $n\times p_{j}$
 matrix of rank $p_{j}$ of observations, and $\beta_{j}$ is a $p_{j}$-dimensional
 coefficient vector. The domain of parameter values are given as follows:
 $\beta_{jr}\in\mathbb{R}$, ($r=1,\ldots,p_{j},j=1,\ldots,M$), $\omega_{ij}\in\mathbb{R}$,
@@ -522,8 +541,8 @@ Bayesian approach to the SUR model is preferred over standard estimation
 methods.
 
 To complete the Bayesian specification, following Zellner \citep{Zellner1971},
-consider Jefffery's invariant prior for $(\beta,\,\Omega)$,
-where $\pi(.)$ denotes a prior distribution:
+consider Jeffrey's invariant prior for $(\beta,\,\Omega)$, where
+$\pi(.)$ denotes a prior distribution:
 
 \begin{equation}
 \pi(\beta,\Omega)=\pi(\beta)\pi(\Omega)\propto\mid\Omega\mid^{-\frac{M+1}{2}},
@@ -532,7 +551,7 @@ where the last term above is the square root of the determinant of
 the Fisher information matrix. Jeffery's prior is invariant under
 any one-to-one re-parametrization of the model and, as a result, is
 frequently used in the literature. The theoretical notion of invariance
-is somewhat involved. Intuitively, Jefferey's prior is appealing when
+is somewhat involved. Intuitively, Jeffrey's prior is appealing when
 used with scale parameters. That is, it does not matter, for instance,
 if one characterizes the model, say using the variance or standard
 deviation; the prior is valid under both of these \emph{scale parametrizations}.
@@ -622,7 +641,7 @@ f(\beta\mid\Omega,Y_{n+1},X)=N(\hat{\beta},\hat{\Omega}_{\beta})\\
 Let us recap the value of the Bayesian SUR model: it explicitly models
 the cross-correlations between the $M$ stock returns via the system
 of equations. Second, the regression parameter vector $\beta$ is
-random, hence we are able to obtain its posterior distribution rather
+random; hence we are able to obtain its posterior distribution rather
 than a point estimate. Hence, the regression coefficient on social
 media sentiments could evolve each day due to market dynamics or \emph{system}
 noise: this is in addition to the noise one observes in stock returns
@@ -651,7 +670,7 @@ y_{j,t}=\alpha_{j}+X_{j,t}\beta_{j,t}+Z_{j,t}\gamma_{j}+u_{j,t}\\
 \end{array}
 \end{equation}
 
-\noindent where $y_{j,t}$, $\alpha_{j}$, $X_{j,t}$, $\beta_{j,t}$,$u_{j,t}$,
+where $y_{j,t}$, $\alpha_{j}$, $X_{j,t}$, $\beta_{j,t}$,$u_{j,t}$,
 $v_{j,t}$ are scalars and in particular, $X_{j,t}$ corresponds to
 the time-varying regressors, namely social media sentiments. The $Z_{j,t}$
 are $1\times p_{j}$ vectors and $\gamma_{j}$ are $p_{j}\times1$
@@ -703,7 +722,7 @@ is given by:
 \end{equation}
 
 In the above, all parameters with a subscript $0$ correspond to those
-from the DLM component of the model. Since, the posterior distribution
+from the DLM component of the model. Since the posterior distribution
 of $\Theta$ will not have a closed form solution, we would have to
 use MCMC methods for the estimation and prediction phases of the analysis.
 To this end, like before, a Gibbs sampler algorithm is derived. Saving
@@ -1166,24 +1185,23 @@ MSFT  & -0.14  & -0.144  & 0.00  & 0.99  & 3.71 \tabularnewline
 \par\end{center}
 
 \begin{doublespace}
-For the 2009 and 2011 data sets, the actual realized returns for all the stocks 
-are within two standard errors from the means of the
-respective predictive densities. Our SUR-DLM approach not only models
-the covariance between stocks (as discussed in section 4.2.2) but
-note that the predictive densities feature higher levels of kurtosis
-than the normal distribution for some of the predictive distributions
-of stock returns. In other words, the predictive distributions for
-many of these returns could be heavy-tailed. The Bayesian SUR-DLM
-captures such features appropriately. The primary benefit of higher
-order moments is they influence the estimates of the lower order ones.
-For example, if the true underlying density is, say unimodal and leptokurtic,
-the probability mass at the peak will be significantly influenced
-by the model used to describe the data. Here, we have shown that the
-parameters are time-varying which suggests that all the moments of
-the evolving probability densities will change and influence the future
-moments. The kurtosis for many of the predictive distributions clearly
-show that the data are leptokurtic. Treating this explicitly (like
-we do) leads to better predictions.
+For the 2009 and 2011 data sets, the actual realized returns for all
+the stocks are within two standard errors from the means of the respective
+predictive densities. Our SUR-DLM approach not only models the covariance
+between stocks (as discussed in section 4.2.2) but note that the predictive
+densities feature higher levels of kurtosis than the normal distribution
+for some of the predictive distributions of stock returns. In other
+words, the predictive distributions for many of these returns could
+be heavy-tailed. The Bayesian SUR-DLM captures such features appropriately.
+The primary benefit of higher order moments is they influence the
+estimates of the lower order ones. For example, if the true underlying
+density is, say unimodal and leptokurtic, the probability mass at
+the peak will be significantly influenced by the model used to describe
+the data. Here, we have shown that the parameters are time-varying
+which suggests that all the moments of the evolving probability densities
+will change and influence the future moments. The kurtosis for many
+of the predictive distributions clearly show that the data are leptokurtic.
+Treating this explicitly (like we do) leads to better predictions.
 
 A striking feature from Tables 5 and 6 is that the standard deviations
 of the predictive densities for all the stocks are substantially smaller
@@ -1299,7 +1317,7 @@ pooled data set  & -2.99  & 0.0056  & -0.96  & 0.0592  & 2.52  & 0.0175\tabularn
 \end{table}
 
 Third, for the 2011 data, there is a statistically significant difference
-between Model 1 and Model 3 with two-tailed p-value lass than 5\%
+between Model 1 and Model 3 with two-tailed p-value less than 5\%
 under both MAE and MSE metrics. This indicates that \emph{adding the
 extra lagged Fama-French/ Momentum factors worsen the predictions}.
 
@@ -1317,8 +1335,8 @@ Model 1 outperforms Model 2 and Model 3 significantly with two-tailed
 p-value lass than 5\% under the MAE metric. With the MSE metric, Model
 1 outperforms Model 2 and 3 at the 1\% significance level. Thus, when
 data sets with different levels of volatility are combined, Model
-1 (the one with dynamic CS and static Market Return) better predicts returns compared
-to models with additional static factors in them.
+1 (the one with dynamic CS and static Market Return) better predicts
+returns compared to models with additional static factors in them.
 
 In conclusion, it is crucial to emphasize the upshot of Tables 7 and
 8: modeling parameter uncertainty via SUR/DLMs goes a long way in
@@ -1336,8 +1354,8 @@ well.
 \section{Conclusion}
 
 \begin{doublespace}
-A novel Bayesian method to asses the relationship between social media
-sentiments and future stock returns was considered. Methodologically,
+A novel Bayesian method to assess the relationship between social
+media sentiments and future stock returns was considered. Methodologically,
 the model integrated two mathematical notions: Dynamic Linear Models
 (DLMs) allow us to explicitly model the time-varying relationship
 between social media sentiments and future stock returns; and Seemingly
@@ -1406,7 +1424,7 @@ skill in mutual fund performance. To our knowledge, no one has provided
 a satisfactory way to tackle that problem in the financial economics
 literature.
 
- \bibliographystyle{DSS_first_submission/elsart-num-sort}
+\bibliographystyle{DSS_first_submission/elsart-num-sort}
 \bibliography{CS}
 
 \end{doublespace}
